@@ -1,0 +1,105 @@
+/* 更新时间线 */
+#upDateLine {
+	background: lightgreen;
+}
+#updl {
+	
+}
+
+
+/* 背景图片 */
+body {
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url('https://img.ams1.imgbed.xyz/2020/12/20/RNmeU.jpg');
+}
+
+#relative {
+	/* position: relative; */
+	text-align: center;
+	margin-top: 10%;
+}
+
+#inputText {
+	/* 圆角 */
+	border-radius: 50px;
+	/* 输入框长度和高度 */
+	width: 40rem;
+	height: 2.45rem;
+	background: rgba(255, 255, 255, 0.274);
+	/* 边框宽度 上 右 下 左 */
+	/* border-width: 0 0 0.23rem 5; */
+	border-width: 0 5px medium 5px;
+	/* solid 实线 */
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.986);
+	/* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+	box-shadow: 5px 5px 10px #02e1ff;
+	/* 毛玻璃 */
+	backdrop-filter: blur(5px);
+}
+
+/*修改提示文字的颜色*/
+input::-webkit-input-placeholder {
+	color: rgb(255, 255, 255);
+	font-size: 1.5rem;
+	text-align: center;
+	text-shadow: 0 0 5px rgb(0, 217, 255, 1);
+}
+
+/* 点击之后文提示文字消失 */
+input:focus::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0);
+	font-size: 1.5rem;
+	text-align: center;
+	text-shadow: 0 0 5px rgb(255, 255, 255, 0);
+}
+
+/* 输入的文字 */
+input {
+	color: rgb(255, 255, 255);
+	font-size: 1.5rem;
+	text-align: center;
+	text-shadow: 0 0 5px rgb(0, 217, 255, 1);
+	/* 隐藏选中时的框框 */
+	outline: medium;
+}
+
+/* 导航卡 */
+/* 浮动盒子 */
+#floatBox {
+	background-color: #0099ff2c;
+	backdrop-filter: blur(2px);
+	float: left;
+	border-radius: 20px;
+	margin-top: 2%;
+	/* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+	box-shadow: 0px 0px 5px 10px #00000000;
+	width: 57rem;
+	/* height: 41rem; */
+	margin-left: 25%; 
+	overflow:auto;
+}
+::-webkit-scrollbar {
+	display: none;
+  }
+
+.cardStyle {
+	float: left;
+	background-color: rgba(137, 43, 226, 0.151);
+	backdrop-filter: blur(2px);
+	border: 0.1rem solid rgb(255, 255, 255);
+	/* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影色 */
+	box-shadow: 0px 0px 5px 10px #0c857100;
+	width: 10rem;
+	height: 5rem;
+	/* 导航卡外边距 */
+	margin: 1rem 0rem 1rem 1rem;
+	/* 圆角 */
+	border-radius: 20px;
+}
+
+.cardStyle:hover {
+	/* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+	box-shadow: 0px 0px 5px 5px #4ae4ffa8;
+}
