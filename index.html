@@ -2,32 +2,160 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>ice纯净导航</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport"
-		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-
-	<link rel="stylesheet" href="./iceCss.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>ice纯净导航</title>
+  <!-- <link rel="stylesheet" href="../layui/css/layui.css"> -->
+  <link rel="stylesheet" href="./layui.css">
 </head>
 
 <body>
-	<!-- 搜索栏和导航卡 position: relative -->
-	<div id="relative">
-		<form action="http://www.baidu.com/baidu" target="_blank">
-			<input type="text" name=word id="inputText" autocomplete="off"
-				placeholder="o_O???  不 知 道 阁 下 心 里 到 底 在 想 什 么 呢 ？" />
-		</form>
-		<!-- 导航卡 -->
-		<div id="floatBox">
-			<div class="cardStyle"></div>
-			<div class="cardStyle"></div>
-			<div class="cardStyle"></div>
-			<div class="cardStyle"></div>
-			<div class="cardStyle"></div>
-		</div>
-	</div>
-</body>
+
+  <style type="text/css">
+    *::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* 栅格布局 */
+    .grid-demo.grid-demo-bg1 {
+      background-color: #00e1ff8a;
+      backdrop-filter: blur(0.25rem);
+      border-radius: 25px;
+
+    }
+
+    .grid-demo {
+      padding: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      background-color: #00e1ff8a;
+      backdrop-filter: blur(0.25rem);
+      color: #fff;
+      font-size: 2rem;
+      margin: 2rem;
+      border-radius: 25px;
+    }
+
+    .tinyhand {
+      CURSOR: pointer;
+    }
+
+    body {
+      background-size: cover;
+      background-attachment: fixed;
+      background-image: url("https://img.ams1.imgbed.xyz/2020/12/20/RNmeU.jpg");
+      /* backdrop-filter: blur(0.25rem); */
+      /* 禁止选中文字 */
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+    }
+
+    .nav {
+      height: 5rem;
+      width: 100%;
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(5px);
+      position: fixed;
+      top: 0;
+    }
+
+    .content {
+      height: 1400px;
+      background: rgba(255, 166, 0, 0);
+      margin-top: 100px;
+    }
+
+    #Searchbox {
+      /* position: relative; */
+      text-align: center;
+      top: 1rem;
+      z-index: 999;
+    }
+
+    #inputText {
+      /* 圆角 */
+      border-radius: 50px;
+      /* 输入框长度和高度 */
+      width: 40rem;
+      height: 2.45rem;
+      background: rgba(255, 255, 255, 0.274);
+      /* 边框宽度 上 右 下 左 */
+      /* border-width: 0 0 0.23rem 5; */
+      border-width: 0 5px medium 5px;
+      /* solid 实线 */
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.986);
+      /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+      box-shadow: 5px 5px 10px #02e1ff;
+      /* 毛玻璃 */
+      backdrop-filter: blur(5px);
+      margin-top: 1rem;
+    }
+
+    /*修改提示文字的颜色*/
+    #inputText::-webkit-input-placeholder {
+      color: rgb(255, 255, 255);
+      font-size: 1.5rem;
+      text-align: center;
+      text-shadow: 0 0 5px rgb(0, 217, 255, 1);
+    }
+
+    /* 输入的文字 */
+    #inputText {
+      color: rgb(255, 255, 255);
+      font-size: 1.5rem;
+      text-align: center;
+      text-shadow: 0 0 5px rgb(0, 217, 255, 1);
+      /* 隐藏选中时的框框 */
+      outline: medium;
+    }
+  </style>
+
+  <body>
+    <div class="nav">
+      <div id="Searchbox">
+        <form action="http://www.baidu.com/baidu" target="_blank">
+          <input type="text" name="word" id="inputText" autocomplete="off" placeholder="有什么可以为阁下效劳的？" />
+        </form>
+      </div>
+    </div>
+    <div class="content">
+      <div class="layui-col-sm3">
+        <div class="grid-demo grid-demo-bg1 tinyhand" onclick="window.open('https://www.acfun.cn/','_self')">AcFun</div>
+      </div>
+      <div class="layui-col-sm3">
+        <div class="grid-demo tinyhand" onclick="window.open('https://www.bilibili.com/','_self')">Bilibili</div>
+      </div>
+      <div class="layui-col-sm3">
+        <div class="grid-demo grid-demo-bg1 tinyhand" onclick="window.open('https://cgsociety.org/','_self')">CGSociety
+        </div>
+      </div>
+      <div class="layui-col-sm3">
+        <div class="grid-demo tinyhand" onclick="window.open('http://www.yinfans.me/','_self')">4K蓝光原盘</div>
+      </div>
+      <div class="layui-col-sm3">
+        <div class="grid-demo tinyhand" onclick="window.open('https://github.com/','_self')">GitHub</div>
+      </div>
+    </div>
+
+    <!-- <script src="../layui/layui.js"></script> -->
+    <script src="./layui.js"></script>
+    <script>
+      //一般直接写在一个js文件中
+      layui.use(['layer', 'form'], function () {
+        var layer = layui.layer,
+          form = layui.form;
+
+        layer.msg('Hello World');
+      });
+    </script>
+  </body>
 
 </html>
