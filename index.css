@@ -1,0 +1,105 @@
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 栅格布局 */
+  .grid-demo.grid-demo-bg1 {
+    background-color: #00e1ff8a;
+    backdrop-filter: blur(0.25rem);
+    border-radius: 25px;
+
+  }
+
+  .grid-demo {
+    padding: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: #00e1ff8a;
+    backdrop-filter: blur(0.25rem);
+    color: #fff;
+    font-size: 2rem;
+    margin: 2rem;
+    border-radius: 25px;
+  }
+
+  .tinyhand {
+    CURSOR: pointer;
+  }
+
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("https://img.ams1.imgbed.xyz/2020/12/20/RNmeU.jpg");
+    /* backdrop-filter: blur(0.25rem); */
+    /* 禁止选中文字 */
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+  }
+
+  .nav {
+    height: 5rem;
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+
+  .content {
+    height: 1400px;
+    background: rgba(255, 166, 0, 0);
+    margin-top: 100px;
+  }
+
+  #Searchbox {
+    /* position: relative; */
+    text-align: center;
+    top: 1rem;
+    z-index: 999;
+  }
+
+  #inputText {
+    /* 圆角 */
+    border-radius: 50px;
+    /* 输入框长度和高度 */
+    width: 40rem;
+    height: 2.45rem;
+    background: rgba(255, 255, 255, 0.274);
+    /* 边框宽度 上 右 下 左 */
+    /* border-width: 0 0 0.23rem 5; */
+    border-width: 0 5px medium 5px;
+    /* solid 实线 */
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.986);
+    /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    box-shadow: 5px 5px 10px #02e1ff;
+    /* 毛玻璃 */
+    backdrop-filter: blur(5px);
+    margin-top: 1rem;
+  }
+
+  /*修改提示文字的颜色*/
+  #inputText::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(0, 217, 255, 1);
+  }
+
+  /* 输入的文字 */
+  #inputText {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 0 0 5px rgb(0, 217, 255, 1);
+    /* 隐藏选中时的框框 */
+    outline: medium;
+  }
