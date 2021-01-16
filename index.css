@@ -63,14 +63,15 @@
     /* position: relative; */
     text-align: center;
     top: 1rem;
-    z-index: 999;
+    /* z-index: 999; */
   }
 
   #inputText {
     /* 圆角 */
     border-radius: 50px;
     /* 输入框长度和高度 */
-    width: 40rem;
+    /* width: 40rem; */
+    width: 65%;
     height: 2.45rem;
     background: rgba(255, 255, 255, 0.274);
     /* 边框宽度 上 右 下 左 */
@@ -84,14 +85,17 @@
     /* 毛玻璃 */
     backdrop-filter: blur(5px);
     margin-top: 1rem;
+    /* float:left; */
+    border:0.1rem dashed #006666;
   }
 
   /*修改提示文字的颜色*/
   #inputText::-webkit-input-placeholder {
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    color: rgb(6, 47, 82);
+    font-size: 1.8rem;
     text-align: center;
     text-shadow: 0 0 5px rgb(0, 217, 255, 1);
+    /* color: #006666; */
   }
 
   /* 输入的文字 */
