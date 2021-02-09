@@ -1,59 +1,54 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>ice纯净导航</title>
-  <!-- <link rel="stylesheet" href="../layui/css/layui.css"> -->
-  <link rel="stylesheet" href="./layui.css">
-  <link rel="stylesheet" href="./index.css">
-</head>
-
-<body>
-<!-- 
-  <style type="text/css">
-    
-  </style> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>ice</title>
+  </head>
 
   <body>
-    <div class="nav">
-      <div id="Searchbox">
-        <form action="http://www.baidu.com/baidu" target="_self">
-          <input type="text" name="word" id="inputText" autocomplete="off" placeholder="有什么可以为阁下效劳的？" />
-        </form>
-      </div>
+    <form action="http://www.baidu.com/baidu" target="_self">
+      <input
+        type="text"
+        name="word"
+        id="text"
+        autocomplete="off"
+        placeholder="BAIDU"
+      />
+    </form>
+    <div id="floatBox">
+      <button
+        class="but"
+        onClick="window.open('https://www.acfun.cn/','_self')"
+      >
+        AcFun
+      </button>
+      <button
+        class="but"
+        onClick="window.open('https://www.bilibili.com/','_self')"
+      >
+        哔哩哔哩
+      </button>
+      <button
+        class="but"
+        onClick="window.open('https://cgsociety.org/','_self')"
+      >
+        CGSociety
+      </button>
+      <button
+        class="but"
+        onClick="window.open('http://www.yinfans.me/','_self')"
+      >
+        4K蓝光原盘
+      </button>
+      <button class="but" onClick="window.open('https://github.com/','_self')">
+        GitHub
+      </button>
+      <button class="but" onClick="window.open('https://www.ggac.net/','_self')">
+        GGAC
+      </button>
     </div>
-    <div class="content">
-      <div class="layui-col-sm3">
-        <div class="grid-demo grid-demo-bg1 tinyhand" onclick="window.open('https://www.acfun.cn/','_self')">AcFun</div>
-      </div>
-      <div class="layui-col-sm3">
-        <div class="grid-demo tinyhand" onclick="window.open('https://www.bilibili.com/','_self')">Bilibili</div>
-      </div>
-      <div class="layui-col-sm3">
-        <div class="grid-demo grid-demo-bg1 tinyhand" onclick="window.open('https://cgsociety.org/','_self')">CGSociety
-        </div>
-      </div>
-      <div class="layui-col-sm3">
-        <div class="grid-demo tinyhand" onclick="window.open('http://www.yinfans.me/','_self')">4K蓝光原盘</div>
-      </div>
-      <div class="layui-col-sm3">
-        <div class="grid-demo tinyhand" onclick="window.open('https://github.com/','_self')">GitHub</div>
-      </div>
-    </div>
-
-    <!-- <script src="../layui/layui.js"></script> -->
-    <script src="./layui.js"></script>
-    <script>
-      //一般直接写在一个js文件中
-      layui.use(['layer', 'form'], function () {
-        var layer = layui.layer,
-          form = layui.form;
-
-        layer.msg('欢迎来到ice纯净导航');
-      });
-    </script>
   </body>
-
 </html>
