@@ -10,13 +10,11 @@
 >>来自`星凰`的日期显示js代码
 >>```javascript
 >>function setClock() {
->>    let fullTime = new Date();
->>    let timeElement = document.getElementById>>('time');
->>    if (timeElement) timeElement.innerText = >>fullTime.getHours() + ':' + fullTime.>>getMinutes() + ':' + fullTime.getSeconds();
->>    // if (timeElement) timeElement.innerText = >>fullTime.getHours() + ':' + fullTime.>>getMinutes() + ':' + fullTime.getSeconds();
+>>    let timeElement = document.getElementById('time');
+>>    if (timeElement) timeElement.innerText = new Date()>>.toTimeString().split(' ')[0]
 >>}
 >>
->>setInterval("setClock()", 1000);
+>>setInterval(setClock, 1000);
 >>```
 >>由于没有星期的显示，所以暂时用了[网上找的一段代码](https://blog.csdn.net/qq_46384325/article/details/107441210?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-6&spm=1001.2101.3001.4242)
 ## v3.0 2021/2

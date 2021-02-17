@@ -7,6 +7,14 @@
 // }
 
 // setInterval("setClock()", 1000);
+
+// 新版时间js
+// function setClock() {
+//   let timeElement = document.getElementById('时钟标签的id');
+//   if (timeElement) timeElement.innerText = new Date().toTimeString().split(' ')[0]
+// }
+
+// setInterval(setClock, 1000);
 function show(){
     var date = new Date();
     var year = date.getFullYear();
