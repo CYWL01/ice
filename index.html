@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./index.css" />
-    <title>ice</title>
-  </head>
+<html>
 
-  <body>
-    <form action="http://www.baidu.com/baidu" target="_self">
-      <input
-        type="text"
-        name="word"
-        id="text"
-        autocomplete="off"
-        placeholder="BAIDU"
-      />
-    </form>
-    <div id="floatBox">
-      <button
-        class="but"
-        onClick="window.open('https://www.acfun.cn/','_self')"
-      >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./root.css" />
+  <!-- JS -->
+
+  <title>ice</title>
+</head>
+
+<body>
+  <div id="web-head"></div>
+
+  <div id="web-left"></div>
+
+  <div id="web-center">
+    <div id="date-time"></div>
+    <div id="searchbox">
+      <form action="https://www.baidu.com/s" target="_self">
+        <input type="text" name="word" id="search" autocomplete="off" placeholder="众里寻她千百度" />
+        <a href="./update.md" ><input type="button" id="update" value="更新文档"></a>
+      </form>
+    </div>
+
+    <div id="labelbox">
+      <button class="label" onClick="window.open('https://www.acfun.cn/','_self')">
         AcFun
       </button>
-      <button
-        class="but"
-        onClick="window.open('https://www.bilibili.com/','_self')"
-      >
+      <button class="label" onClick="window.open('https://www.bilibili.com/','_self')">
         哔哩哔哩
       </button>
-      <button
-        class="but"
-        onClick="window.open('https://cgsociety.org/','_self')"
-      >
+      <button class="label" onClick="window.open('https://cgsociety.org/','_self')">
         CGSociety
       </button>
-      <button
-        class="but"
-        onClick="window.open('http://www.yinfans.me/','_self')"
-      >
+      <button class="label" onClick="window.open('http://www.yinfans.me/','_self')">
         4K蓝光原盘
       </button>
-      <button class="but" onClick="window.open('https://github.com/','_self')">
+      <button class="label" onClick="window.open('https://github.com/','_self')">
         GitHub
       </button>
-      <button class="but" onClick="window.open('https://www.ggac.net/','_self')">
+      <button class="label" onClick="window.open('https://www.ggac.net/','_self')">
         GGAC
       </button>
     </div>
-  </body>
+  </div>
+
+  <div id="web-right"></div>
+
+  <div id="web-foot"></div>
+</body>
+
 </html>

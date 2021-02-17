@@ -1,0 +1,63 @@
+:root {
+    /* body */
+    --body-width:  100%;
+    --body-height: 100%;
+    /* width */
+    --web-head-width:  100%;
+    --web-left-width:   20%;
+    --web-center-width: 50%;
+    --web-right-width:  30%;
+    --web-foot-width:  100%;
+    --date-time-width: 100%;
+    /* height */
+    --web-head-height:    5%;
+    --web-left-height:   90%;
+    --web-center-height: 90%;
+    --web-right-height:  90%;
+    --web-foot-height:    5%;
+    --date-time-height:  17.1%;
+    /* web-color */
+    --web-head:           #49ac96;
+    --web-left:           #49ac96;
+    --web-center:         #49ac96;
+    --web-right:          #49ac96;
+    --web-foot:           #49ac96;
+    --web-bg-color:       #49ac96;
+    --date-time-bg-color: #49ac96;
+    --label-box-bg-color: #49ac96;
+    --label-bg-color:     #81dbc5;
+    --update-bg-color:    #81dbc5;
+    --search-bg-color:    #85e0ca;
+    /* font-color */
+    --search-font-color:   #1a7b7e96;
+    --label-font-color:    #1a7a7e;
+    /* float */
+    --folat-head-left-center-right-foot: left;
+    /* border-radius */
+    --search-border-radius: 0.5rem;
+    --label-border-radius:  1rem;
+    /* searchbox */
+    --searchbox-margin-lef:13%;
+    --searchbox-width:76%;
+    /* search */
+    --search-width:  76%;
+    --search-height: 40px;
+    --search-font-size: 2rem;
+    --search-margin-left: 12%;
+    /* update */
+    --update-font-size: 1.8rem;
+    ---update-border-radius:0 0.5rem 0.5rem 0;
+    --update-width:150px;
+    --update-height:40px;
+    --update-margin-left:-1.5%;
+    /* labelbox */
+    --labelbox-height: 69.4%;
+    /* label */
+    --label-width: 10rem;
+    --label-height: 5rem;
+    --label-margin-left: 12%;
+    --label-margin-top: 2.5%;
+    --label-border-radius: 1rem;
+    --label-font-size: 1.5rem;
+
+}

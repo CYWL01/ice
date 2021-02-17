@@ -3,61 +3,114 @@
     margin: 0;
 }
 
+#web-head {
+    float: var(--folat-head-left-center-right-foot);
+    width: var(--web-head-width);
+    height: var(--web-head-height);
+    background: var(--web-head);
+}
+
+#web-left {
+    float: var(--folat-head-left-center-right-foot);
+    width: var(--web-left-width);
+    height: var(--web-left-height);
+    background: var(--web-left);
+}
+
+#web-center {
+    float: var(--folat-head-left-center-right-foot);
+    width: var(--web-center-width);
+    height: var(--web-center-height);
+    background: var(--web-center);
+}
+
+#web-right {
+    float: var(--folat-head-left-center-right-foot);
+    width: var(--web-right-width);
+    height: var(--web-right-height);
+    background: var(--web-right);
+}
+
+#web-foot {
+    float: var(--folat-head-left-center-right-foot);
+    width: var(--web-foot-width);
+    height: var(--web-foot-height);
+    background: var(--web-foot);
+}
+
 body {
-    background: #388e8e;
+    position: absolute;
+    background: var(--web-bg-color);
     /* 禁止选中文字 */
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;
     user-select: none;
-    width: 100%;
-    height: 100%;
-}
-#text,
-#text::-webkit-input-placeholder,
-.but{
-    font-size: 1.5rem;
-    color: #3aadb1;
-    background: #006666;
+    width: var(--body-width);
+    height: var(--body-height);
 }
 
-#text,
-#text::-webkit-input-placeholder {
+#date-time{
+    background: var(--date-time-bg-color);
+    width:var(--date-time-width);
+    height:var(--date-time-height);
+}
+#searchbox{
+    width: var(--searchbox-width);
+    margin-left: var(--searchbox-margin-lef);
+}
+#search{
+    width: var(--search-width);
+    height: var(--search-height);
+    font-size: var(--search-font-size);
     outline: medium;
-    border-radius: 10px;
-    width: 48%;
-    height: 2.45rem;
-    margin-top: 10%;
-    margin-left: 25%;
-    font-size: 1.8rem;
+    border-radius:var(--search-border-radius);
+    border: 0px solid;
     text-align: center;
-    border-color: transparent;
-}
-
-#floatBox {
-    /* background-color: #006666; */
-    position: absolute;
     float: left;
-    margin-top: 2%;
-    width: 48.2%;
-    height: 68%;
-    margin-left: 25%;
-    overflow: auto;
+    background: var(--search-bg-color);
+    color:var(--search-font-color);
 }
-
-.but {
-    width: 10rem;
-    height: 5rem;
-    margin-left: 2%;
-    margin-top: 2.5%;
-    border-radius: 10px;
+#search::-webkit-input-placeholder,#update{
+    text-align: center;
+    background: var(--search-bg-color);
+    color:var(--search-font-color);
+}
+#update{
+    width: var(--update-width);
+    height: var(--update-height);
+    border-radius: var(---update-border-radius);
+    margin-left: var(--update-margin-left);
+    font-size: var(--update-font-size);
+    background: var(--update-bg-color);
     border: none;
     outline: medium;
     /* 鼠标变小手 */
     CURSOR: pointer;
 }
+#labelbox{
+        background: var(--label-box-bg-color); 
+        width: var(--web-center-width);
+        height: var(--labelbox-height);
+        overflow: auto;
+        position: absolute;
+}
 
-#floatBox::-webkit-scrollbar {
+.label{
+    font-size: var(--label-font-size);
+    color: var(--label-font-color);
+    background: var(--label-bg-color);
+    width: var(--label-width);
+    height: var(--label-height);
+    margin-left: var(--label-margin-left);
+    margin-top: var(--label-margin-top);
+    border-radius: var(--label-border-radius);
+    border: none;
+    outline: medium;
+    /* 鼠标变小手 */
+    CURSOR: pointer;
+}
+#labelbox::-webkit-scrollbar {
     display: none;
 }
