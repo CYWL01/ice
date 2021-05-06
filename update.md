@@ -1,3 +1,18 @@
+	<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./root.css" />
+  <!-- JS -->
+
+  <title>ice</title>
+</head>
+
+<body>
 # ice 更新文档 
 
 ## v3.1 2020/2/17
@@ -35,3 +50,4 @@
 <input type="text" name="word" id="text"autocomplete="off" placeholder="BAIDU" />
 </form>
 ```
+</body>
