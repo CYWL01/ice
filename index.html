@@ -3,54 +3,30 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS -->
+  <title>ice纯净个人导航</title>
+  <!-- 首页的CSS -->
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./root.css" />
-  <!-- JS -->
-
-  <title>ice</title>
+  <!-- 搜索框的css -->
+  <link rel="stylesheet" href="./bdss.css" />
 </head>
 
 <body>
-  <div id="web-head"></div>
 
-  <div id="web-left"></div>
-
-  <div id="web-center">
-    <div id="date-time"></div>
-    <div id="searchbox">
-      <form action="https://www.baidu.com/s" target="_self">
-        <input type="text" name="word" id="search" autocomplete="off" placeholder="众里寻她千百度" />
-        <a href="./update.md" ><input type="button" id="update" value="更新文档"></a>
+    <div id="bd">
+      <form action="https://www.baidu.com/s" target="_self" class="parent">
+        <div class="search">
+          <input type="text" id="bdss" name="word" id="search" autocomplete="off" placeholder="众里寻她">
+          <button id="bdbt" type="submit">千百度</button>
+        </div>
       </form>
+      <a href="./update.html" style="color: aqua;margin-left:89.3%;" >更新文档</a>
     </div>
 
-    <div id="labelbox">
-      <button class="label" onClick="window.open('https://www.acfun.cn/','_self')">
-        AcFun
-      </button>
-      <button class="label" onClick="window.open('https://www.bilibili.com/','_self')">
-        哔哩哔哩
-      </button>
-      <button class="label" onClick="window.open('https://cgsociety.org/','_self')">
-        CGSociety
-      </button>
-      <button class="label" onClick="window.open('http://www.yinfans.me/','_self')">
-        4K蓝光原盘
-      </button>
-      <button class="label" onClick="window.open('https://github.com/','_self')">
-        GitHub
-      </button>
-      <button class="label" onClick="window.open('https://www.ggac.net/','_self')">
-        GGAC
-      </button>
-    </div>
-  </div>
+    
 
-  <div id="web-right"></div>
-
-  <div id="web-foot"></div>
 </body>
 
 </html>

@@ -1,26 +1,11 @@
-	<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="./root.css" />
-  <!-- JS -->
-
-  <title>ice</title>
-</head>
-
-<body>
 # ice 更新文档 
 
-## v3.1 2020/2/17
+## v3.2 2020/2/17
 >1.重构了网页结构代码，采用了css的变量，也就是自定义属性  
 >2.取消了时间的显示，考虑日后增加回来  
 >3.采取了更年轻化，更鲜艳的配色  
 
-## v3.0 2021/2/17
+## v3.1 2021/2/17
 > 1.增加了日期的显示  
 >>来自`星凰`的日期显示js代码
 >>```javascript
@@ -49,5 +34,3 @@
 <form action="http://www.baidu.com/baidu"target="_self">
 <input type="text" name="word" id="text"autocomplete="off" placeholder="BAIDU" />
 </form>
-```
-</body>
