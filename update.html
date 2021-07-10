@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,24 @@
     <link rel="stylesheet" href="./update.css">
 </head>
 
-
+<style>
+    a:link {
+        color: #00ffdd;
+        text-decoration: none;
+    }/* 未被访问的链接 蓝色 */
+    a:visited {
+        color: #00ffdd;
+        text-decoration: none;
+    }/* 已被访问过的链接 绿色 */
+    a:hover {
+        color: #00ffdd;
+        text-decoration: none;
+    }/* 鼠标悬浮在上的链接 橙色 */
+    a:active {
+        color: #66ff00;
+        text-decoration: none;
+    }/* 鼠标点中激活链接 红色 */
+</style>
 　
 
 <body>
@@ -25,15 +42,25 @@
 
     <div class="layout">
         <div id="archive">
-            <div class="article-sort-title" style="color: rgb(255,114,66);">ice更新文档</div>
+            <div class="article-sort-title"><a href="./index.html" style="color:var(--link);">ice更新文档</a></div>
             <!-- <div class="article-sort-title">ice更新文档</div> -->
             <div class="article-sort ">
-                <div class="article-sort-item year"><a>此页面的代码借鉴于</a><a href="https://crazyzhang.cn/archives/">
+                <div class="article-sort-item year"><a>此页面的代码借鉴于</a><a href="https://crazyzhang.cn/archives/" style="color:var(--link);">
                         https://crazyzhang.cn/archives/</a></div>
 
                 <div class="article-sort-item" style="background:rgba(4, 34, 88, 0.411);">
-                    <a>*/*/*<br>由于本人技术问题以及使用的电脑原因，背景图片按照1920*1080来弄</a>
+                    <a>年/月/日<br>由于本人技术问题以及使用的电脑原因，背景图片按照1920*1080来弄</a>
                 </div>
+                <!-- TODO v4 2021/6/3 --- 2021/7/10-->
+                <div class="article-sort-item">
+                    <a>v4.0.1 2021/6/30</a><br>
+                    <a>1.update页面排版修复</a><br>
+                    <a style="color: rgb(255, 112, 112);">2.可点击的地方（超链接）颜色更改为rgb(255, 112, 112)</a><br>
+                    <a>3.xmp代码增加了阴影</a><br>
+                    <a>4.颜色更改为<a style="color:rgb(66, 255, 113) ;">rgb(66, 255, 113)</a><br>
+                    <a>5.ice更新文档中ice增加跳转到主页的功能
+                </div>
+
                 <!-- TODO v4 2021/6/3-->
                 <div class="article-sort-item">
                     <a>v4 2021/6/3<br>

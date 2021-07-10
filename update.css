@@ -1,6 +1,7 @@
 :root{
-    --font:rgb(0,195,255);
+    --font:rgb(0, 195, 255);
     --hover:rgb(255,114,66);
+    --link:rgb(255, 112, 112);
 }
 
 a {
@@ -27,8 +28,8 @@ a:hover{
 .article-sort-item:before {
     position: absolute;
     top: 0.48rem;
-    left: calc(-1rem - 7px);
-    width: 0.3rem;
+    left: calc(-1rem - 16px);
+    width: 1rem;
     height: 0.3rem;
     border: 0.15rem solid #49b1f5;
     border-radius: 0.3rem;
@@ -116,6 +117,8 @@ a:hover{
 html {
     font-size: 25px;
     /*TODO 字体大小*/
+    text-shadow: 5px 5px 5px #10063f;
+    /* 字体阴影 */
 }
 
 body {
@@ -127,8 +130,8 @@ body {
 
 .card{
     width: 800px;
-    font-size: 15px;
-    margin-left: -40%;
+    font-size: 0.7rem;
+    margin-left: -49%;
     margin-top: -5%;
-    color: rgb(255,114,66);
+    color: rgb(66, 255, 113);
 }

@@ -2,10 +2,3 @@ body {
     margin: 0;
     padding: 0;
 }
-root{
-    /* 百度搜索 */
-    --bdss-width:  76%;
-    --bdss-height: 40px;
-    --bdss-font-size: 2rem;
-    --bdss-margin-left: 12%;
-}
