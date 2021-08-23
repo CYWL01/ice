@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("../img/bg.jpg");
+}
+
+.box {
+    width: 99.9%;
+    height: 937px;
+    /* border: 1px solid #ccc; */
+    backdrop-filter: blur(5px);
+    background-color: rgba(66, 116, 150, 0.171);
+    position: relative;
+}
+
+.box1 {
+    width: 900px;
+    height: 937px;
+    background: url("../img/bg.jpg")no-repeat scroll -500px -90px transparent;
+    /* background-color: rgba(0, 153, 255, 0.247); */
+    position: absolute;
+    top: 5.4%;
+    left: 26%;
+    margin: -50px 0 0 -50px;
+}
+
+#logo {
+    position: absolute;
+    top: 1%;
+    left: -46%;
+    max-width: 46%;
+    height: auto;
+}
+
+.nav {
+    width: auto;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    background: rgba(5, 25, 92, 0.301);
+    backdrop-filter: blur(5px);
+    color: rgb(99, 255, 234);
+}
+
+a,a:hover,a:active,a:visited {
+    color: rgb(99, 255, 234);
+}
+
+.zl {
+    width: 225px;
+    height: 90px;
+    background: rgba(5, 25, 92, 0.301);
+    float: left;
+    margin: 0.%;
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
