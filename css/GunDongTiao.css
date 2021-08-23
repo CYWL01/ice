@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+    width:12px; /*滚动条宽度*/
+}
+::-webkit-scrollbar-track-piece {
+    background-color:rgba(24, 87, 119, 0.562); /*滑道*/
+    -webkit-border-radius:0px; /*滑道圆角宽度*/
+}
+::-webkit-scrollbar-thumb {
+    background-color:rgba(7, 70, 102, 0.432); /*滑动条表面*/
+    border:solid 3px rgba(4, 105, 105, 0.397); /*滑动条边框*/
+    border-radius:0px; /*滑动条圆角宽度*/
+}

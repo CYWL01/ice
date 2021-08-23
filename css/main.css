@@ -9,7 +9,7 @@ body {
 
 .box {
     width: 99.9%;
-    height: 935px;
+    height: 972px;
     /* border: 1px solid #ccc; */
     backdrop-filter: blur(5px);
     background-color: rgba(66, 116, 150, 0.171);
@@ -18,7 +18,7 @@ body {
 
 .box1 {
     width: 900px;
-    height: 937px;
+    height: 970px;
     background: url("../img/bg.jpg")no-repeat scroll -500px -90px transparent;
     /* background-color: rgba(0, 153, 255, 0.247); */
     position: absolute;
@@ -46,7 +46,10 @@ body {
     color: rgb(99, 255, 234);
 }
 
-a,a:hover,a:active,a:visited {
+a,
+a:hover,
+a:active,
+a:visited {
     color: rgb(99, 255, 234);
 }
 
