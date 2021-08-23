@@ -9,7 +9,7 @@ body {
 
 .box {
     width: 99.9%;
-    height: 937px;
+    height: 935px;
     /* border: 1px solid #ccc; */
     backdrop-filter: blur(5px);
     background-color: rgba(66, 116, 150, 0.171);
