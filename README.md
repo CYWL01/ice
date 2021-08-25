@@ -3,4 +3,4 @@
 # ~~bhxhlty~~
 ~~现改为导航页面 [http://imiku.ga/](http://imiku.ga/)~~
 # bhxhlty
-现改为导航页面 [bhxhlty.top](bhxhlty.top/)
+现改为导航页面 [https://bhxhlty.top/](https://bhxhlty.top/)
